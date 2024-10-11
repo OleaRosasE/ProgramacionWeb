@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Media - Conócenos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0056b3;
+            color: beige;
+            align-items: center;
+            height: 120px;
+        }
+
+        header>div>h1 {
+            margin-left: 2rem;
+        }
+
+        nav {
+            display: flex;
+            position: relative;
+            gap: 20px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            margin: 0;
+            top: 100%;
+            color: beige;
+            width: 200px;
+        }
+
+        .submenu>a {
+            display: block;
+            text-decoration: none;
+            color: beige;
+
+        }
+
+        .servicios {
+            position: relative;
+        }
+
+        .servicios>a {
+            text-decoration: none;
+            color: beige;
+        }
+
+        .servicios:hover .submenu {
+            display: block;      
+        }
+        .submenu a:hover{
+            color: #f35f3a;
+        }
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado con el nombre de la empresa -->
+    <header>
+        <div>
+            <h1>Focus Media</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="inicio.html">Inicio</a>
+                <div class="servicios"> <a href="#">Servicios</a>
+                    <div class="submenu">
+                        <a href="marketing-digital.html">Marketing digital</a>
+                        <a href="diseño-web.html">Diseño Web</a></li>
+                        <a href="consultoria.html">Consultoría</a></li>
+                    </div>
+                </div>
+                <a href="conocenos.html">Nosotros</a>
+                <a href="contacto.html">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección "Conócenos" -->
+    <section>
+        <h2>Quiénes Somos</h2>
+        <p>Focus Media es una empresa dedicada a brindar soluciones innovadoras en el ámbito de la publicidad y el
+            marketing digital. Nuestra misión es impulsar el crecimiento de las marcas a través de estrategias creativas
+            y efectivas. Creemos en la importancia de ofrecer un servicio de calidad que ayude a nuestros clientes a
+            destacar en el competitivo mundo del marketing digital.</p>
+
+        <p><strong>Misión:</strong> Proporcionar servicios de marketing digital de alta calidad que impulsen la
+            visibilidad y el éxito de nuestros clientes.</p>
+        <p><strong>Visión:</strong> Convertirnos en una empresa líder en el sector de la publicidad digital, reconocida
+            por nuestra creatividad, innovación, y compromiso con los resultados.</p>
+        <p><strong>Valores:</strong> Innovación, compromiso, integridad, trabajo en equipo y orientación al cliente.</p>
+
+        <h2>Nuestra Historia</h2>
+        <p>Fundada en 2022, Focus Media nació con la visión de ayudar a las empresas a adaptarse a un entorno digital en
+            constante evolución. Desde nuestros inicios, hemos trabajado con diversas marcas, ayudándolas a conectar con
+            sus audiencias de manera efectiva y creativa. A lo largo de los años, hemos expandido nuestra oferta de
+            servicios, manteniéndonos a la vanguardia de las últimas tendencias en marketing digital.</p>
+
+        <p>Hoy en día, Focus Media es un referente en el sector, comprometida con brindar asesoría personalizada y
+            soluciones adaptadas a las necesidades de cada cliente.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Focus Media &copy; 2024 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

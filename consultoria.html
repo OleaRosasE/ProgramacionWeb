@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesorías de Marketing</title>
+    <style>
+        /* Diseño general */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0056b3;
+            color: beige;
+            align-items: center;
+            height: 120px;
+        }
+
+        header>div>h1 {
+            margin-left: 2rem;
+        }
+
+        nav {
+            display: flex;
+            position: relative;
+            gap: 20px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            margin: 0;
+            top: 100%;
+            color: beige;
+            width: 200px;
+        }
+
+        .submenu>a {
+            display: block;
+            text-decoration: none;
+            color: beige;
+
+        }
+
+        .servicios {
+            position: relative;
+        }
+
+        .servicios>a {
+            text-decoration: none;
+            color: beige;
+        }
+        .submenu a:hover{
+            color: #f35f3a;
+        }
+        .servicios:hover .submenu {
+            display: block;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Encabezado */
+        .banner {
+            background-image: url('https://images.unsplash.com/photo-1553632168-eb4237620881?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: fadeInDown 2s;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin-top: 0;
+            animation: fadeInUp 2s;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Sección del contenido principal */
+        .services {
+            background-color: white;
+            border-radius: 8px;
+            padding: 40px 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-top: -50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .services h2 {
+            color: #007BFF;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+
+        .services ul {
+            text-align: left;
+            line-height: 2;
+            list-style: none;
+            padding: 0;
+            font-size: 1.1rem;
+        }
+
+        .services ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .services ul li::before {
+            content: '✔️';
+            position: absolute;
+            left: 0;
+            color: #007BFF;
+        }
+
+        .services ul li:hover {
+            background-color: #f0f8ff;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado con imagen de fondo -->
+    <header>
+        <div>
+            <h1>Focus Media</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="inicio.html">Inicio</a>
+                <div class="servicios"> <a href="#">Servicios</a>
+                    <div class="submenu">
+                        <a href="marketing-digital.html">Marketing digital</a>
+                        <a href="diseño-web.html">Diseño Web</a></li>
+                        <a href="consultoria.html">Consultoría</a></li>
+                    </div>
+                </div>
+                <a href="conocenos.html">Nosotros</a>
+                <a href="contacto.html">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1>Asesorías en Marketing</h1>
+        <p>Impulsa tu marca, conecta con tu público y destaca en el mercado competitivo</p>
+    </section>
+
+    <!-- Contenido principal con servicios -->
+    <div class="container">
+        <section class="services">
+            <h2>Nuestros Servicios</h2>
+            <p>Te ayudamos a trazar estrategias ganadoras, potenciando cada aspecto de tu negocio para que tomes
+                decisiones que impulsen tus ventas, fidelicen a tus clientes y optimicen tus resultados.</p>
+            <ul>
+                <li>Análisis de marca y objetivos</li>
+                <li>Investigación de mercado y competencia</li>
+                <li>Desarrollo de la estrategia personalizada</li>
+                <li>Optimización de la presencia online</li>
+                <li>Ejecución de campañas de marketing</li>
+                <li>Monitoreo y análisis de resultados</li>
+                <li>Informe y asesoramiento continuo</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Asesorías en Marketing. Todos los derechos reservados.</p>
+        <p>Visítanos en <a href="#">www.asesoriasmarketing.com</a></p>
+    </footer>
+
+</body>
+
+</html>

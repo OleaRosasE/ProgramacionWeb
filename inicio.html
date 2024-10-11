@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Media</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0056b3;
+            color: beige;
+            align-items: center;
+            height: 120px;
+        }
+
+        header>div>h1 {
+            margin-left: 2rem;
+        }
+
+        nav {
+            display: flex;
+            position: relative;
+            gap: 20px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            margin: 0;
+            top: 100%;
+            color: beige;
+            width: 200px;
+        }
+
+        .submenu>a {
+            display: block;
+            text-decoration: none;
+            color: beige;
+
+        }
+
+        .servicios {
+            position: relative;
+        }
+
+        .servicios>a {
+            text-decoration: none;
+            color: beige;
+        }
+
+        .servicios:hover .submenu {
+            display: block;           
+        }
+
+        .submenu a:hover{
+            color: #f35f3a;
+        }
+
+        .banner {
+            background-image: url("imagenes/banner.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 50vh;
+
+            color: azure;
+            align-content: center;
+            font-size: 2rem;
+            text-shadow: 2px 2px 5px #050505;
+        }
+
+        .banner>h1 {
+            margin-left: 1%;
+        }
+
+        .banner>p {
+            margin-left: 1%;
+        }
+
+        .contenedores {
+            display: flex;
+            justify-content: center;
+        }
+
+        h2,
+        h3 {
+            color: #007BFF;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Focus Media</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="inicio.html">Inicio</a>
+                <div class="servicios"> <a href="#">Servicios</a>
+                    <div class="submenu">
+                        <a href="marketing-digital.html">Marketing digital</a>
+                        <a href="diseño-web.html">Diseño Web</a></li>
+                        <a href="consultoria.html">Consultoría</a></li>
+                    </div>
+                </div>
+                <a href="conocenos.html">Nosotros</a>
+                <a href="contacto.html">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>FOCUS MEDIA</h1>
+            <p>Un toque de creatividad te hace especial</p>
+        </section>
+        <br>
+        <section>
+            <p>Bienvenido, te esperábamos</p>
+            <p>Te invitamos a dar un breve recorrido a nuestro portal web para que nos conozcas y sepas como podemos
+                ayudarte </p>
+        </section>
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <div class="contenedores">
+                <div>
+                    <h3>Marketing digital</h3>
+                    <p>Ofrecemos estrategias enfocadas en la promoción de productos o servicios a través de canales
+                        digitales
+                        como redes sociales, buscadores y más</p>
+                    <a href="marketing-digital.html"><button>Más información</button></a>
+                </div>
+                <div>
+                    <h3>Diseño Web</h3>
+                    <p>diseñamos y dearrollamos sitios web que sean atractivos, funcionales y optimizados para ofrecer
+                        una
+                        buena
+                        experiencia de usuario</p>
+                    <a href="diseño-web.html"><button>Más información</button></a>
+                </div>
+                <div>
+                    <h3>Asesoramiento y Consultoría</h3>
+                    <p>Te asesoramos para ayudarte a desarrollar y ejecutar estrategias de marketing efectivas. Esto
+                        puede
+                        incluir análisis de mercado, planificación de campañas, desarrollo de marca, y
+                        análisis de rendimiento de campañas (ROI)</p>
+                    <a href="consultoria.html"><button>Más información</button></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Nuestros Proyectos</h2>
+            <div class="contenedores">
+                <div>
+                    <h3>Línea de ropa fotosensible</h3>
+                    <p class="descripcion">Campaña de marketing para una nueva línea de ropa fotosensible</p>
+                    <img src="imagenes/ropa foto sensible.jpg" alt="ropa fotosensible" width="250" height="200">
+                </div>
+                <div>
+                    <h3>Rebranding de línea de cosméticos</h3>
+                    <p class="descripcion">Rediseño y rebranding de una conocida línea de cométicos</p>
+                    <img src="imagenes/linea de cosmeticos.jpg" alt="linea de cosmeticos" width="250" height="200">
+                </div>
+                <div>
+                    <h3>Sitio web para Dulcería</h3>
+                    <p class="descripcion">Diseño y desarrollo de un sitio web para una dulcería </p>
+                    <img src="imagenes/pagina web dulceria.jpg" alt="sitio web dulceria" width="250" height="200">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>¿Qué te ofrecemos?</h2>
+            <p>Focus Media pone a tu disposición un staff de profesionales altamente capacitados que te acompañarán
+                desde el primer momento para brindarte la solución más idónea para tu proyecto</p>
+            <a href="nosotros.html"><button>Conócenos</button></a>
+            <a href="contacto.html"><button>Contáctanos</button></a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Focus Media, Todos los derechos reservados </p>
+    </footer>
+</body>
+
+</html>

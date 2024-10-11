@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios profesionales de diseño web para empresas y emprendedores">
+    <title>Diseño Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0056b3;
+            color: beige;
+            align-items: center;
+            height: 120px;
+        }
+
+        header>div>h1 {
+            margin-left: 2rem;
+        }
+
+        nav {
+            display: flex;
+            position: relative;
+            gap: 20px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            margin: 0;
+            top: 100%;
+            color: beige;
+            width: 200px;
+        }
+
+        .submenu>a {
+            display: block;
+            text-decoration: none;
+            color: beige;
+
+        }
+
+        .servicios {
+            position: relative;
+        }
+
+        .servicios>a {
+            text-decoration: none;
+            color: beige;
+        }
+
+        .servicios:hover .submenu {
+            display: block;
+        }
+        .submenu a:hover{
+            color: #f35f3a;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+
+            height: 20vh;
+            margin: 5%;
+            display: flex;
+            display: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imagen {
+
+            width: 300px;
+
+            margin: 0 15;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Focus Media</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="inicio.html">Inicio</a>
+                <div class="servicios"> <a href="#">Servicios</a>
+                    <div class="submenu">
+                        <a href="marketing-digital.html">Marketing digital</a>
+                        <a href="diseño-web.html">Diseño Web</a></li>
+                        <a href="consultoria.html">Consultoría</a></li>
+                    </div>
+                </div>
+                <a href="conocenos.html">Nosotros</a>
+                <a href="contacto.html">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+    </nav>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos soluciones de diseño web personalizadas para hacer crecer tu negocio online. Diseño responsive,
+            desarrollo frontend y backend, optimización SEO y mucho más.</p>
+
+        <video height="250" width="350" autoplay controls>
+            <source src="video/¿Qué es el Frontend y Backend_💥.mp4">
+        </video>
+    </section>
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <p>Explora algunos de nuestros proyectos exitosos que han ayudado a nuestros clientes a destacar en el mundo
+            digital.</p>
+        <button>
+            <h1>Practicas de diseños</h1>
+        </button>
+        <text-align>
+            <center></center>
+        </text-align>
+        <hr>
+
+        <div class="container">
+
+
+            <img class="imagen" src="imagenes/imagen1.jpg" alt="">
+
+            <img class="imagen" src="imagenes/imagen2.jpg" alt="">
+
+            <img class="imagen" src="imagenes/imagen3.jpg" alt="">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Focus Media 2024. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
